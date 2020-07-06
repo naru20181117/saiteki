@@ -19,8 +19,6 @@ table
           = link_to 'Edit', edit_theme_path(theme)
         td
           = link_to 'Destroy', theme, method: :delete, data: { confirm: 'Are you sure?' }
-v-spacer
-= text_field_tag :name, "v-model": "name"
+br
 = link_to 'New Theme', new_theme_path
 
-/ v-dialog v-model="dialogPostFlag"

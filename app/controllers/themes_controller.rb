@@ -1,5 +1,6 @@
 class ThemesController < ApplicationController
   before_action :set_theme, only: [:show, :edit, :update, :destroy]
+  before_action :current_user
 
   # GET /themes
   # GET /themes.json
@@ -24,7 +25,7 @@ class ThemesController < ApplicationController
   # POST /themes
   # POST /themes.json
   def create
-    @theme = Theme.new(theme_params)
+    @theme = current_user.themes.build(theme_params)
 
     respond_to do |format|
       if @theme.save

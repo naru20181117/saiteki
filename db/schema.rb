@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2020_07_03_051138) do
 
   create_table "themes", force: :cascade do |t|
     t.string "title"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
