@@ -21,4 +21,32 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+|    DB   |  User   |
+|   ----  |  ----   |
+|   Name  |  String |
+|   email |  String |
+|   password |  String |
+
+
+|    DB   |  theme  |
+|   ----  |  ----   |
+|  title  |  String |
+| user_id | integer |
+
+|    DB   |  item   |
+|   ----  |  ----   |
+|   name  |  String |
+| points  | integer |
+|theme_id | integer |
+
+|  DB |item_category|
+|   ----  |  ----   |
+|   name  |  String |
+| item_id | integer |
+|category_id|integer|
+
+|    DB   | category|
+|   ----  |  ----   |
+|   name  |  String |
+|importance| integer|
+|theme_id | integer |
